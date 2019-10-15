@@ -4,6 +4,6 @@
 
 export const getAllResults = state => {
   return {
-    activities:state.activities
+    activities: state.activities
   }
 }

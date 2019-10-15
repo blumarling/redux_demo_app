@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom'
 import { compose } from 'recompose'
 import { withRedux } from './hoc'
 
-import { Home } from './views'
+import { Home, HomeHooks } from './views'
 class App extends Component {
   render() {
     return (
       <Router basename={''}>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/" component={Home} exact/>
+          <Route path="/hook-test" component={HomeHooks} exact/>
         </Switch>
       </Router>
     )

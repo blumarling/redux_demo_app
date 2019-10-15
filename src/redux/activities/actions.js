@@ -10,8 +10,11 @@ import axios from 'axios'
 export const getActivities = () => {
   //thunk torna una funzione asincrona dove fare la chiamata
   return async (dispatch, getState) => {
+  console.log('parto')
+
     try {
       const result = await axios.get('https://api.musement.com/api/v3/venues/164/activities?limit=6&offset=0')
+      console.log({result})
       //al termine possiamo chiamare un'altra api
       dispatch(getActivitiesSecondaChiamata())     
       dispatch(storeActivities(result.data))
