@@ -22,6 +22,9 @@ const FormTest = () => {
     // hai a disposizione values utile per poi mandare la POST o la PUT
     // e le action per resettare successivamente la form o altre operazioni
     // che altrimenti dovresti fare a mano
+
+    // se tutto torna qui possiamo fare la nostra post (con fetch o axios ecc ecc)
+
   }
 
   // oggetto di configurazione iniziale
