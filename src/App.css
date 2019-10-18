@@ -20,3 +20,27 @@
 .App-link {
   color: #09d3ac;
 }
+
+.customForm {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 140px;
+}
+.customForm div {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+input {
+  font-size: 17px;
+  padding: 9px 16px;
+  border-radius: 9px;
+  border: 1px solid #444;
+}
+
+.errorLabel {
+  display: block;
+  color: red;
+}

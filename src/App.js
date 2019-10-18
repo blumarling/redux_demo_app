@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom'
 import { compose } from 'recompose'
 import { withRedux } from './hoc'
 
-import { Home, HomeHooks } from './views'
+import './App.css'
+
+import { Home, HomeHooks, FormTest } from './views'
 class App extends Component {
   render() {
     return (
@@ -11,6 +13,7 @@ class App extends Component {
         <Switch>
           <Route path="/" component={Home} exact/>
           <Route path="/hook-test" component={HomeHooks} exact/>
+          <Route path="/form-test" component={FormTest} exact/>
         </Switch>
       </Router>
     )
