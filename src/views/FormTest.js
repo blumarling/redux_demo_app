@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from "yup"
-import { withFormik } from 'formik';
 
 // oggetto di valudazione istanziato con YUP
 // ha una sintassi a punti molto semplice da configurare
